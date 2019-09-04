@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
             RunLeft();
             rig.MovePosition( new Vector2(5,0 ));
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow)||Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKeyDown(KeyCode.UpArrow)||Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
