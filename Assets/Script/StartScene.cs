@@ -22,5 +22,15 @@ public class StartScene : MonoBehaviour
         {
             Application.Quit();
         }
+        else if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("鼠标点击");
+            StartGame();
+        }
+    }
+    public void StartGame()
+    {
+        Debug.Log("进入游戏");
+        SceneManager.LoadScene("Main");
     }
 }
