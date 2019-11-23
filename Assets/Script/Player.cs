@@ -39,13 +39,18 @@ public class Player : MonoBehaviour
             RunLeft();
             rig.MovePosition( new Vector2(5,0 ));
         }
-        else if (Input.GetKeyDown(KeyCode.UpArrow)||Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKeyDown(KeyCode.UpArrow)||Input.GetKeyDown(KeyCode.W)||Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
         else if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             Idle();
+        }
+        else if (Input.GetKey(KeyCode.Space) || Input.GetKeyUp(KeyCode.Space))
+        {
+            Jump();
+            Debug.Log("1243");
         }
         //else if (Input.GetKeyDown(KeyCode.D))
         //{
