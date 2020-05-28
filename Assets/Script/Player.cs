@@ -47,6 +47,11 @@ public class Player : MonoBehaviour
         {
             Idle();
         }
+        else if (Input.GetKey(KeyCode.Space) || Input.GetKeyUp(KeyCode.Space))
+        {
+            Jump();
+            Debug.Log("1243");
+        }
         //else if (Input.GetKeyDown(KeyCode.D))
         //{
         //    Die();
